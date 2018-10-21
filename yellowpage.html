@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+	<meta charset="utf-8"/>
+		<title>yellowpage</title>
+		<style type="text/css">
+			@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+			body {background-color: black;}
+			a:link {text-decoration: none; color: white;}
+			a:{color: white;}
+			a:visited{color: white;}     
+		    a:hover{ color: white; text-shadow: 2px 2px 10px white;}
+			#text{position: absolute; color: yellow; font-family:'Noto Sans KR', '맑은 고딕', '돋움'; font-size: 6em; font-weight: bold; line-height: 1em; width: 1600px; height: 1600px; overflow: hidden;}
+			#text2{position: absolute; color: #26ff00; font-family:'Noto Sans KR', '맑은 고딕', '돋움'; font-size: 6em; font-weight: bold; line-height: 1em; width: 1600px; height: 1600px; overflow: hidden;}
+			#home{position: fixed; bottom: 30px; right: 30px; font-family:'Noto Sans KR', '맑은 고딕', '돋움'; font-size: 4em; font-weight: bold; color: white; line-height: 1em;
+				animation-name: bing;
+				animation-duration: 1.5s;
+				animation-iteration-count: infinite;}
+			#back{position: absolute; width: 100%}
+			#gif{position: absolute; left: 170px; width: 1000px; height: 1000px; overflow: hidden; top: 300px; }
+			#gif img{position: absolute; width: 1000px;  }
+			#line{position: absolute; right: 30px; cursor: pointer;}
+			#line:hover{ }
+			.circle {
+	           width: 1px;
+	           height: 1px;
+	           border: 1px solid #000;
+	           position: absolute;
+	           border-radius: 1px;
+	           color: pink;
+	           border-color: white;
+
+	        }
+
+			@keyframes bing{
+			from{transform: rotate(0deg);}
+			to{transform: rotate(360deg);}
+			}
+
+			
+		</style>
+	</head>
+	<body>
+
+		<div id="gif">
+			<img src="yellowgay.gif">
+		</div>
+		<div id="text2"></div>
+		<div id="text"></div>
+		<div id="back">
+			<img src="yelback.png">
+		</div>
+		<div id="line">
+			<img src="lineart.png">
+		</div>
+		<div class="circle"></div>
+		<div id="home">
+			<a href="index.html">👈<br>예수님S2<br>가라사대</a> 
+		</div>
+		<script type="text/javascript">
+		var i=0,text;
+		text = "이를 인하여 하나님께서 저희를 부끄러운 욕심에 내어 버려 두셨으니 곧 저희 여인들도 순리대로 쓸 것을 바꾸어 역리로 쓰며 이와 같이 남자들도 순리대로 여인 쓰기를 버리고 서로 향하여 음욕이 불 일듯 하매 남자가 남자로 더불어 부끄러운 일을 행하여 저희의 그릇됨에 상당한 보응을 그 자신에 받았느니라이를 인하여 하나님께서 저희를 부끄러운 욕심에 내어 버려 두셨으니 곧 저희 여인들도 순리대로 쓸 것을 바꾸어 역리로 쓰며 이와 같이 남자들도 순리대로 여인 쓰기를 버리고 서로 향하여 음욕이 불 일듯 하매 남자가 남자로 더불어 부끄러운 일을 행하여 저희의 그릇됨에 상당한 보응을 그 자신에 받았느니라이를 인하여 하나님께서 저희를 부끄러운 욕심에 내어 버려 두셨으니 곧 저희 여인들도 순리대로 쓸 것을 바꾸어 역리로 쓰며 이와 같이 남자들도 순리대로 여인 쓰기를 버리고 서로 향하여 음욕이 불 일듯 하매 남자가 남자로 더불어 부끄러운 일을 행하여 저희의 그릇됨에 상당한 보응을 그 자신에 받았느니라"
+
+		function typing() {
+			if(i<text.length){
+				document.getElementById("text").innerHTML += text.charAt(i);
+				i++;
+				setTimeout(typing,20);
+			}
+		}
+		typing();
+
+		var y=0,text2;
+		text2 = "순리대로 여인 쓰기를 버리고 서로 향하여 음욕이 불 일듯 하매 남자가 남자로 더불어 부끄러운 일을 행하여 저희의 그릇됨에 상당한 보응을 그 자신에 받았느니라이를 인하여 하나님께서 저희를 부끄러운 욕심에 내어 버려 두셨으니 곧 저희 여인들도 순리대로 쓸 것을 바꾸어 역리로 쓰며 이와 같이 남자들도 순리대로 여인 쓰기를 버리고 서로 향하여 음욕이 불 일듯 하매 남자가 남자로 더불어 부끄러운 일을 행하여 저희의 그릇됨에 상당한 보응을 그 자신에 받았느니라이를 인하여 하나님께서 저희를 부끄러운 욕심에 내어 버려 두셨으니 곧 저희 여인들도 순리대로 쓸 것을 바꾸어 역리로 쓰며 이와 같이 남자들도 순리대로 여인 쓰기를 버리고 서로 향하여 음욕이 불 일듯 하매 남자가 남자로 더불어 부끄러운 일을 행하여 저희의 그릇됨에 상당한 보응을 그 자신에 받았느니라"
+
+		function typing2() {
+			if(y<text2.length){
+				document.getElementById("text2").innerHTML += text2.charAt(y);
+				y++;
+				setTimeout(typing2,10);
+			}
+		}
+		typing2();
+
+		var currentLine = 1;
+
+		document.onmousemove = animateCircles;
+
+        function animateCircles (evnet) {
+             var circle = document.createElement("div");
+             circle.setAttribute("class", "circle");
+             document.body.appendChild(circle);
+
+             circle.style.left = event.clientX + 10+'px';
+             circle.style.top = event.clientY + 10+'px';
+
+        }
+		</script>
+	</body>
+	</html>

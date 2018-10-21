@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+	<meta charset="utf-8"/>
+		<title>orangepage</title>
+		<style type="text/css">
+			@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+			body {background-color: black;}
+			a:link {text-decoration: none; color: white;}
+			a:{color: white;}
+			a:visited{color: white;}     
+		    a:hover{ color: white; text-shadow: 2px 2px 10px white;}
+			#text{position: absolute; color: orange; font-family:'Noto Sans KR', '맑은 고딕', '돋움'; font-size: 6em; font-weight: bold; line-height: 1em; width: 500px; height: 500px; border-radius: 50%; overflow: hidden;
+				animation-name: bing;
+				animation-duration: 1.5s;
+				animation-iteration-count: infinite;}
+			#text2{position: absolute; color: orange; font-family:'Noto Sans KR', '맑은 고딕', '돋움'; font-size: 6em; font-weight: bold; line-height: 1em; width: 200px; height: 700px; border-radius: 50%; overflow: hidden; left: 1200px;
+				animation-name: bang;
+				animation-duration: 1.5s;
+				animation-iteration-count: infinite;}
+			#text3{position: absolute; color: #ff5500; font-family:'Noto Sans KR', '맑은 고딕', '돋움'; font-size: 6em; font-weight: bold; line-height: 1em; width: 700px; height: 700px; border-radius: 50%; overflow: hidden; top: 400px;}
+			#text4{position: absolute; color: orange; font-family:'Noto Sans KR', '맑은 고딕', '돋움'; font-size: 6em; font-weight: bold; line-height: 1em; width: 200px; height: 700px; border-radius: 50%; overflow: hidden; left: 1400px; }
+			#home{position: fixed; bottom: 30px; right: 30px; font-family:'Noto Sans KR', '맑은 고딕', '돋움'; font-size: 4em; font-weight: bold; color: white; line-height: 1em;
+				animation-name: bing;
+				animation-duration: 1.5s;
+				animation-iteration-count: infinite;}
+			#gif{position: absolute; top: 450px; left: 500px; width: 500px; height: 500px; border-radius: 50%; overflow: hidden;}
+			#gif img{position: absolute; left: 0px; width: 500px;}
+			.circle {
+	           width: 1px;
+	           height: 1px;
+	           border: 1px solid #000;
+	           position: absolute;
+	           border-radius: 1px;
+	           color: pink;
+	           border-color: white;
+
+	        }
+
+			@keyframes bing{
+			from{transform: rotate(0deg);}
+			to{transform: rotate(360deg);}
+			}
+
+			@keyframes bang{
+			from{transform: rotateY(0deg);}
+			to{transform: rotateY(360deg);}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="circle"></div>
+		<div id="home">
+			<a href="index.html">👈<br>예수님S2<br>가라사대</a> 
+		</div>
+		<div id="gif">
+			<img src="notorangegay.gif">
+		</div>
+		<div id="text"></div>
+		<div id="text2"></div>
+		<div id="text3"></div>
+		<div id="text4"></div>
+		
+		<script type="text/javascript">
+		var i=0,text;
+		text = "그러나 사람이 율법을 법 있게 쓰면 율법은 선한 것인줄 우리는 아노라 알것은 이것이니 법은 옳은 사람을 위하여 세운 것이 아니요 오직 불법한 자와 복종치 아니하는 자며 경건치 아니한 자와 죄인이며 거룩하지 아니한 자와 망령된 자며 아비를 치는 자와 어미를 치는 자며 살인하는 자며 음행하는 자며 남색하는 자며 사람을 탈취하는 자며 거짓말 하는 자며 거짓 맹세하는 자와 기타 바른 교훈을 거스리는 자를 위함이니"
+
+		function typing() {
+			if(i<text.length){
+				document.getElementById("text").innerHTML += text.charAt(i);
+				i++;
+				setTimeout(typing,50);
+			}
+		}
+		typing();
+
+		var o=0,text2;
+		text2 = "🌋🌍🥑🍊🍑🍁🥕🐞🐥🦀🦐🦑🐍🐎🦊🐅💥🧡👩‍👩‍👧‍👧🌋🌍🥑🍊🍑🍁🥕🐞🐥🦀🦐🦑🐍🐎🦊🐅💥🧡👩‍👩‍👧‍👧🌋🌍🥑🍊🍑🍁🥕🐞🐥🦀🦐🦑🐍🐎🦊🐅💥🧡👩‍👩‍👧‍👧🌋🌍🥑🍊🍑🍁🥕🐞🐥🦀🦐🦑🐍🐎🦊🐅💥🧡👩‍👩‍👧‍👧🌋🌍🥑🍊🍑🍁🥕🐞🐥🦀🦐🦑🐍🐎🦊🐅💥🧡👩‍👩‍👧‍👧🌋🌍🥑🍊🍑🍁🥕🐞🐥🦀🦐🦑🐍🐎🦊🐅💥🧡👩‍👩‍👧‍👧🌋🌍🥑🍊🍑🍁🥕🐞🐥🦀🦐🦑🐍🐎🦊🐅💥🧡👩‍👩‍👧‍👧🌋🌍🥑🍊🍑🍁🥕🐞🐥🦀🦐🦑🐍🐎🦊🐅💥🧡👩‍👩‍👧‍👧"
+
+		function typing2() {
+			if(o<text2.length){
+				document.getElementById("text2").innerHTML += text2.charAt(o);
+				o++;
+				setTimeout(typing2,100);
+			}
+		}
+		typing2();
+
+		var k=0,text3;
+		text3 = "어미를 치는 자며 살인하는 자며 음행하는 자며 남색하는 자며 사람을 탈취하는 자며 거짓말 하는 자며 거짓 맹세하는 자와 기타 바른 교훈을 거스리는 자를 위함이니"
+
+		function typing3() {
+			if(k<text3.length){
+				document.getElementById("text3").innerHTML += text3.charAt(k);
+				k++;
+				setTimeout(typing3,50);
+			}
+		}
+		typing3();
+
+		var y=0,text4;
+		text4 = "🍁🥕🐞🐥🦀🦐🦑🐍🐎🦊🐅💥🧡👩‍👩‍👧‍👧🌋🌍🥑🍊🍑🍁🥕🐞🐥🦀🦐🦑🐍🐎🦊🐅💥🧡👩‍👩‍👧‍👧🌋🌍🥑🍊🍑🍁🥕🐞🐥🦀🦐🦑🐍🐎🦊🐅💥🧡👩‍👩‍👧‍👧🌋🌍🥑🍊🍑🍁🥕🐞🐥🦀🦐🦑🐍🐎🦊🐅💥🧡👩‍👩‍👧‍👧🌋🌍🥑🍊🍑🍁🥕🐞🐥🦀🦐🦑🐍🐎🦊🐅💥🧡👩‍👩‍👧‍👧🌋🌍🥑🍊🍑🍁🥕🐞🐥🦀🦐🦑🐍🐎🦊🐅💥🧡👩‍👩‍👧‍👧"
+
+		function typing4() {
+			if(y<text4.length){
+				document.getElementById("text4").innerHTML += text4.charAt(y);
+				y++;
+				setTimeout(typing4,100);
+			}
+		}
+		typing4();
+
+		document.onmousemove = animateCircles;
+
+        function animateCircles (evnet) {
+             var circle = document.createElement("div");
+             circle.setAttribute("class", "circle");
+             document.body.appendChild(circle);
+
+             circle.style.left = event.clientX + 10+'px';
+             circle.style.top = event.clientY + 10+'px';
+
+        }
+		</script>
+	</body>
+	</html>

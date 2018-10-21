@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+	<meta charset="utf-8"/>
+		<title>redpage</title>
+		<style type="text/css">
+			@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+			body {background-image: url(notredgay.gif); background-repeat: no-repeat; background-size: 1700px 1700px; background-color: black;}
+			a:link {text-decoration: none; color: white;}
+			a:{color: white;}
+			a:visited{color: white;}     
+		    a:hover{ color: white; text-shadow: 2px 2px 10px white;}
+			#text{position: absolute; color: #FF0000; font-family:'Noto Sans KR', '맑은 고딕', '돋움'; font-size: 6em; font-weight: bold; line-height: 1em; width: 1000px;}
+			#home{position: fixed; bottom: 30px; right: 30px; font-family:'Noto Sans KR', '맑은 고딕', '돋움'; font-size: 4em; font-weight: bold; color: white; line-height: 1em;
+				animation-name: bing;
+				animation-duration: 1.5s;
+				animation-iteration-count: infinite;}
+			.circle {
+	           width: 5px;
+	           height: 5px;
+	           border: 1px solid #000;
+	           position: absolute;
+	           border-radius: 1px;
+	           color: pink;
+	           border-color: white;
+
+	        }
+
+			@keyframes bing{
+			from{transform: rotate(0deg);}
+			to{transform: rotate(360deg);}
+			}
+
+			
+		</style>
+	</head>
+	<body>
+		<div id="text"></div>
+		<div class="circle"></div>
+		<div id="home">
+			<a href="index.html">👈<br>예수님S2<br>가라사대</a> 
+		</div>
+		<script type="text/javascript">
+		var i=0,text;
+		text = "남자끼리 나누는 성 행위. 이방 신전의 남자 사제(male shrine prostitute)와 제사 의식의 일환으로 이루어지는 성 행위를 비롯하여 동성끼리의 매춘(음행) 행위를 포함한 말. 성경에서는 이런 자를 일컬어, ‘남창’(男娼, 신 23:17; 욥 36:14), ‘남색하는 자’(왕상 14:24), ‘개 같은 자’(신 23:17-18) 등으로 표현한다. 남색 행위는 율법으로 엄히 금지된 가증스런 죄악인데(레 18:22; 신 23:17), 이런 행위자는 사형에 처해졌다(레 20:13). 아브라함 당시 소돔과 고모라에 이런 자들이 많아 불심판을 받았다(창 19:4-5). 그후 사사 시대(삿 19:22)나 왕국 시대에도 여전히 근절되지 않았고 심지어 성전에 남창이 기거했던 사례도 있다(왕하 23:7). 또 바울 당시 로마 제국을 비롯한 이방 세계에 여전히 이런 악습들이 존재했는데(롬 1:27) 이런 자들은 하나님의 법에 따라 심판받을 뿐만 아니라(딤전 1:10) 하나님 나라를 유업으로 얻을 수 없다(고전 6:9)."
+
+		function typing() {
+			if(i<text.length){
+				document.getElementById("text").innerHTML += text.charAt(i);
+				i++;
+				setTimeout(typing,10);
+			}
+		}
+		typing();
+
+		document.onmousemove = animateCircles;
+
+        function animateCircles (evnet) {
+             var circle = document.createElement("div");
+             circle.setAttribute("class", "circle");
+             document.body.appendChild(circle);
+
+             circle.style.left = event.clientX + 10+'px';
+             circle.style.top = event.clientY + 10+'px';
+
+        }
+
+		</script>
+	</body>
+	</html>
